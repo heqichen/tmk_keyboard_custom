@@ -40,6 +40,8 @@
 
 # Target file name (without extension).
 TARGET = gh60_lufa
+REV = CHN
+KEYMAP = heqichen
 
 # Directory common source filess exist
 TMK_DIR = ../../../tmk_core_custom
