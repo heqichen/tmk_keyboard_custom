@@ -23,7 +23,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      /*,-----------------------------------------------------------.
      * |`  | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Bsp|Del|
      * |-----------------------------------------------------------|
-     * |     |MWU|MUp |MWD|   |   |   |Hom|End|PgU|PgD|   |   |    |
+     * |     |MWU|MUp |MWD|   |   |   |Hom|End|PgU|PgD|INS|NLCK|    |
      * |-----------------------------------------------------------|
      * |      |MLe|MDo|MRi|VoD|VoU|Lef|Dow|Up |Rig|   |   |        |
      * |-----------------------------------------------------------|
@@ -35,17 +35,17 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP_HQC(
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, TRNS,TRNS,  \
-        TRNS,WH_U,MS_U,WH_D,TRNS,TRNS,TRNS,HOME,END ,PGUP,PGDN,TRNS,TRNS,TRNS,      \
+        TRNS,WH_U,MS_U,WH_D,TRNS,TRNS,TRNS,HOME,END ,PGUP,PGDN,INS ,NLCK,TRNS,      \
         TRNS,MS_L,MS_D,MS_R,_VOLDOWN,_VOLUP,LEFT,DOWN,UP ,RIGHT,TRNS,TRNS,    TRNS,      \
         TRNS,BTN1,BTN3,BTN2,WBAK,WFWD,LBRC,RBRC,BSPC,DEL, TRNS,     TRNS,FN1,      \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
     //FN1
     KEYMAP_HQC(
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,  \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,      \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,    TRNS,      \
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,      UP ,FN1,      \
-        TRNS,TRNS,TRNS,          TRNS,                    TRNS,LEFT,DOWN,RIGHT)
+        TRNS,TRNS, UP ,TRNS,TRNS,TRNS,TRNS,TRNS,KP_7,KP_8,KP_9,TRNS,NLCK,TRNS,      \
+        TRNS,LEFT,DOWN,RIGHT,TRNS,TRNS,TRNS,TRNS,KP_4,KP_5,KP_6,TRNS,    KP_ENTER,      \
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,KP_1,KP_2,KP_3,      UP ,FN1,      \
+        TRNS,TRNS,TRNS,          TRNS,                    KP_0,LEFT,DOWN,RIGHT)
 };
 
 
